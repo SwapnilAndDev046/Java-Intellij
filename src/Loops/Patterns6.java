@@ -20,6 +20,7 @@ public class Patterns6 {
                     System.out.print("0 ");
                 }
             }
+
             System.out.println();
         }
     }

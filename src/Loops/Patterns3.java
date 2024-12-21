@@ -12,7 +12,7 @@ public class Patterns3 {
             for (int col = 1; col <= 5; col++) {
                 if (row == 1 || row == 4 || col == 1 || col == 5) //so the full stars is at the end corner okay so there the row is some time 1 or 4 or col is 1 or 4
                 {
-                    System.out.print("* ");
+                    System.out.print(col+" ");
                 }
                 else{
                     System.out.print("  ");

@@ -1,33 +1,36 @@
 package OOPs;
 
-public class Oops1 {
+ public class Oops1 {
     public static void main(String[] args) {
-        System.out.printf("%-12s %-15s %-15s\n", "Roll No", "Student Name", "Student Marks");
-        student student1 = new student(12, "swap", 15.5f);//this is syntax for object
-        student1.studInfo();
-        student student2 = new student(13, "ram", 13.5f);
-        student2.studInfo();
-        student student3 = new student(14, "bharat", 25.8f);
-        student3.studInfo();
+        student TenthStd = new student();
+      TenthStd.name="Meena";
+       TenthStd.RollNo=68;
+       TenthStd.percentage=45.8;
+        System.out.println(TenthStd.name);
+
+        Dog Breed = new Dog();
+        Breed.name="max";
+        Breed.KillCount=10;
+        System.out.println(Breed.name);
+
 
     }
+//static class
+     public static class student {
+
+        private String name;
+        private int RollNo;
+       private  double percentage;
+
+
+     }
+
 }
-
-class student {
-    int rollno;
+//instance class
+ class Dog{
     String name;
-    float marks;
-    int n = 3;
+    int KillCount;
 
-    student(int rollno, String name, float marks) {
-        this.rollno = rollno;
-        this.name = name;
-        this.marks = marks;
-    }
 
-    void studInfo() {
-        
-        System.out.printf("%-12d %-15s %-15.2f\n", this.rollno, this.name, this.marks);
-    }
 
 }
